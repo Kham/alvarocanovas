@@ -1,0 +1,151 @@
+body{
+  font-family:trebuchet MS, garuda,verdana, arial;
+  color:#666666;
+  font-size:13px;
+  padding:0;
+  margin:0;
+}
+a,a:visited{
+  color:#666666;
+  text-decoration:none;
+}
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+#page{
+  width: 1005px;
+  position:absolute;
+}
+
+h1{
+  font-size: 18px;
+  text-transform:uppercase;
+  float:right;
+  margin:40px 0 0 0;
+  font-weight:normal;
+  letter-spacing:2px;  
+}
+h1 span{
+  color:#990000;
+}
+
+#menu {
+  text-transform:uppercase;
+  float:left;
+  position:absolute;
+  top:0;
+  left:0;
+  width:620px;
+  height:75px;
+  font-size:10px;
+}
+#menu h2{
+  border-top:1px solid;
+  width:600px;
+  font-size:inherit;
+  margin:0;
+  position:absolute;
+  top:20px;
+  left:10px;
+  
+}
+ul#main_menu_list{
+  margin-top:40px;
+}
+#menu li.first_level{
+  float:left;
+  padding:0 10px;
+  position:relative;
+  top:1px;
+}
+#menu .sub_items{
+  padding-top:10px;
+  position:absolute;
+}
+
+
+#main_content{
+  margin-top:100px;
+  width:100%;
+}
+
+#side_content{
+  float:left;
+  width:200px;
+  height:500px;
+  position:relative;
+
+}
+#side_content .menu{
+  margin-right:60px;
+  margin-top:200px;
+  padding-bottom:10px;
+  border-bottom:1px solid;
+  text-align:right;
+}
+
+#side_content .menu h3{
+  margin:0;
+  margin-bottom:10px;
+  color: #990000;
+  font-size:inherit;
+  font-weight:inherit;
+}
+
+#gallery{
+  position:relative;
+  margin-left:200px;
+}
+#slideshow{
+}
+
+.image-wrapper{
+  position:absolute;
+  text-align:center;
+  width:805px;
+  display:block;
+}
+#slideshow .image-wrapper a{
+  line-height:533px;
+}
+#gallery img{
+  border:1px solid #CCCCCC;
+  vertical-align:middle;
+}
+
+#thumbs{
+  top:543px;
+  position:absolute;
+  width:100%;
+  text-align:center;
+}
+#thumbs .pageLink{
+  padding-left:16px;
+  line-height:19px;
+}
+#thumbs .pageLink.next{
+  background:url(galleriffic.css/nextPageArrow.gif) center center
+}
+#thumbs .pageLink.prev{
+  background:url(galleriffic.css/prevPageArrow.gif) center center
+}
+
+#thumbs ul{
+  display:inline;
+  text-align:center;
+}
+
+#thumbs li{
+  display:inline;
+  margin: 0 10px;
+  width:50px;
+}
+#thumbs a{
+  line-height:60px;
+}
+
+#controls{
+  display:none;
+}

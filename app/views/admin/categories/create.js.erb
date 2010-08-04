@@ -1,0 +1,7 @@
+$('<%= render_j :partial => 'category', :object => @category %>')
+  .hide()
+  .appendTo('#categories')
+  .fadeIn();
+
+$('#new_category')
+  .replaceWith('<%= render_j :partial => 'link_new' %>')

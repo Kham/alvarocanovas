@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="RailsFacetType" name="Ruby on Rails">
+      <configuration>
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="GemRequirementsHolder" version="2">
+    <requirement>
+      <requirement>
+        <dependency name="mysql" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="config/database.yml" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="paperclip" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rails" version="3.0.0.rc" bound="EQUAL" git="false" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ruby-debug" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="config/database.yml" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="will_paginate" version="3.0.pre2" bound="EQUAL" git="false" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.0.0.rc, /opt/local/lib/ruby/gems/1.8/gems/actionmailer-3.0.0.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.0.0.rc, /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.0.0.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.0.rc, /opt/local/lib/ruby/gems/1.8/gems/activesupport-3.0.0.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.0.0.rc, /opt/local/lib/ruby/gems/1.8/gems/railties-3.0.0.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.0.rc.1, /opt/local/lib/ruby/gems/1.8/gems/bundler-1.0.0.rc.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.0.0.rc, /opt/local/lib/ruby/gems/1.8/gems/rails-3.0.0.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.0.0.rc, /opt/local/lib/ruby/gems/1.8/gems/activerecord-3.0.0.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.0.rc, /opt/local/lib/ruby/gems/1.8/gems/activeresource-3.0.0.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3-ruby (v1.2.4, /Users/nico/.gem/ruby/1.8/gems/sqlite3-ruby-1.2.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mysql (v2.8.1, /opt/local/lib/ruby/gems/1.8/gems/mysql-2.8.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] columnize (v0.3.1, /opt/local/lib/ruby/gems/1.8/gems/columnize-0.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-debug-base (v0.10.3, /opt/local/lib/ruby/gems/1.8/gems/ruby-debug-base-0.10.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] paperclip (v2.3.3, /opt/local/lib/ruby/gems/1.8/gems/paperclip-2.3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-debug (v0.10.3, /opt/local/lib/ruby/gems/1.8/gems/ruby-debug-0.10.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.pre2, /opt/local/lib/ruby/gems/1.8/gems/will_paginate-3.0.pre2)" level="application" />
+  </component>
+</module>
+

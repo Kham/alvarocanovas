@@ -1,0 +1,14 @@
+bosnia:
+  title: Bosnia
+  number: 1
+  image_file_name: children.jpg
+
+kosovo:
+  title: Kosovo
+  number: 2
+  image_file_name: crowd.jpg
+  
+georgia:
+  title: Georgia
+  number: 3
+  image_file_name: man_on_the_beach.jpg

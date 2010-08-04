@@ -1,0 +1,4 @@
+$('<%= render_j :partial => 'form', :locals => {:category => @category, :picture => @picture }%>')
+  .hide()
+  .insertBefore('#category_<%= @category.id%>_pictures')
+  .slideDown();

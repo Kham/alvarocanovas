@@ -1,0 +1,6 @@
+$('<%= render_j :partial => 'picture', :object => @picture, :locals => { :category => @category } %>')
+  .hide()
+  .appendTo('<%= "#category_#{@category.id}_pictures"%>')
+  .fadeIn();
+
+$('<%= "#category_#{@category.id}_pictures" %>').sortable('refresh');

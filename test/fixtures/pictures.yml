@@ -1,0 +1,72 @@
+arkan:
+  category: bosnia
+  number: 1
+  top: true
+  image_file_name: arkan.jpeg
+  
+rose:
+  category: bosnia
+  number: 2
+  top: true
+  image_file_name: rose.jpg
+
+building:
+  category: bosnia
+  number: 3
+  top: true
+  image_file_name: building.jpg
+
+img1:
+  category: bosnia
+  number: 4
+  top: true
+  image_file_name: img1.jpg
+
+img2:
+  category: bosnia
+  number: 5
+  top: true
+  image_file_name: img2.jpg
+
+img3:
+  category: bosnia
+  number: 6
+  top: true
+  image_file_name: img3.jpg
+
+img4:
+  category: bosnia
+  number: 7
+  top: true
+  image_file_name: img4.jpg
+
+img5:
+  category: bosnia
+  number: 8
+  top: true
+  image_file_name: img5.jpg
+  
+img6:
+  category: bosnia
+  number: 9
+  top: true
+  image_file_name: img6.jpg
+
+img7:
+  category: bosnia
+  number: 10
+  top: true
+  image_file_name: img7.jpg
+
+img8:
+  category: bosnia
+  number: 11
+  top: true
+  image_file_name: img8.jpg
+
+besson:
+  category: kosovo
+  number: 1
+  top: true
+  image_file_name: besson.jpg
+  

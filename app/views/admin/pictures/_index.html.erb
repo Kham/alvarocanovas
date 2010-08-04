@@ -1,0 +1,5 @@
+
+  <%= content_tag :ul, :class => "sortable pictures", :id => "category_#{category.id}_pictures" do %>
+    <%= render :partial => 'admin/pictures/picture', :collection => pictures, :locals => { :category => category } %>
+  <% end %>
+

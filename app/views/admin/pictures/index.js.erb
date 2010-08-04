@@ -1,0 +1,6 @@
+$('<%= render_j(:partial => 'index', :locals => { :category => @category, :pictures => @pictures })%>')
+  .hide()
+  .appendTo('<%="#category_#{@category.id}"%>')
+  .slideDown()
+  
+

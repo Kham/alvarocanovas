@@ -1,0 +1,2 @@
+$('<%="#picture_#{@picture.id}"%>')
+  .html("<%= render_j :partial => 'form', :locals => { :category => @category, :picture => @picture } %>")

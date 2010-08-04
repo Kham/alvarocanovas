@@ -1,0 +1,4 @@
+$('<%="#picture_#{@picture.id}"%>')
+  .replaceWith("<%= render_j :partial => 'picture', :locals => { :category => @category, :picture => @picture } %>");
+
+$('<%= "#category_#{@category.id}_pictures" %>').sortable('refresh'); 
