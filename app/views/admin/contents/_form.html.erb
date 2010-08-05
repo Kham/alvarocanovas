@@ -1,0 +1,6 @@
+<% labelled_form_for [:admin, @content], :remote => true do |form| %>
+  <%= form.text_field :label %>
+  <%= form.text_area :html %>
+  <%= linl_to "Annuler", edit_admin_form_path, :remote => true %>
+  <%= form.submit %>
+<% end %>
