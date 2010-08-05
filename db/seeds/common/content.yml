@@ -2,6 +2,7 @@ bio:
   name: bio
   label: biographie
   html: Ma bio
+  image_file_name: alvaro.jpg
 
 content:
   name: current_work

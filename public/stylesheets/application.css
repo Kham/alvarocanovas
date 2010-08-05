@@ -18,7 +18,9 @@ ul{
   width: 1005px;
   position:absolute;
 }
-
+img{
+  border:1px solid #CCCCCC;
+}
 h1{
   font-size: 18px;
   text-transform:uppercase;
@@ -113,7 +115,6 @@ ul#main_menu_list{
   line-height:533px;
 }
 #gallery img{
-  border:1px solid #CCCCCC;
   vertical-align:middle;
 }
 
@@ -159,4 +160,14 @@ ul#main_menu_list{
 #main_content .category img{
   float:left;
   margin-right:40px;
+}
+
+#main_content .content{
+  position:relative;
+  float:right;
+}
+#main_content .content_html{
+  width:390px;
+  margin-left:30px;
+  float:right;
 }

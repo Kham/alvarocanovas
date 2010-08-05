@@ -8,7 +8,7 @@
 </head>
 <body>
   <div id="page">
-    <h1>Alvaro Cannovas <span>Photography</span></h1>
+    <h1>Alvaro Cannovas <span><%= yield(:title).blank? ? "Photography" : yield(:title) %></span></h1>
     <div id="menu">
 
       <h2><span>Menu</span></h2>
@@ -22,7 +22,7 @@
         <%= menu_item_link "Corporate/Advertising", list_top_pictures_path %>
         <%= menu_item_link "Publications", list_top_pictures_path %>
         <%= menu_item_link "Multimedia", list_top_pictures_path %>
-        <%= menu_item_link "Current Work", list_top_pictures_path %>
+        <%= menu_item_link "Current Work", content_path(Content::CURRENT_WORK), :remote => true %>
         <%= menu_item_link "Bio", content_path(Content::BIO), :remote => true %>
         <%= menu_item_link "Contact", list_top_pictures_path %>
       </ul>
