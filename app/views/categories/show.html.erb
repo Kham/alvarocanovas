@@ -1,0 +1,7 @@
+<%= content_for :side_content do %>
+  <%= render :partial => 'menu' %>
+<% end %>
+
+<%= render :partial => 'category' %>
+
+<%= javascript_tag "$(function(){SlideShow.launchWithDelay('#{category_pictures_url(@category)}');});" %>

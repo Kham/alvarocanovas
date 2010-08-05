@@ -78,9 +78,11 @@ ul#main_menu_list{
   position:relative;
 
 }
+
+
 #side_content .menu{
-  margin-right:60px;
   margin-top:200px;
+  margin-right:60px;
   padding-bottom:10px;
   border-bottom:1px solid;
   text-align:right;
@@ -148,4 +150,13 @@ ul#main_menu_list{
 
 #controls{
   display:none;
+}
+
+#main_content .category{
+  position:relative;
+  top:170px;
+}
+#main_content .category img{
+  float:left;
+  margin-right:40px;
 }
