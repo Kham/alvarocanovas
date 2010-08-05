@@ -1,0 +1,10 @@
+bio:
+  name: bio
+  label: biographie
+  html: Ma bio
+
+content:
+  name: current_work
+  label: Projet en cours
+  html: boire une bière
+

@@ -12,6 +12,8 @@
     <ul>
       <li><%= link_to "Reportages", '#tab-0' %></li>
       <li><%= link_to "Photographies", list_admin_categories_path %></li>
+      <li><%= link_to Content::BIO.label, edit_admin_content_path(Content::BIO), :id =>"content_#{Content::BIO.id}_label" %></li>
+      <li><%= link_to Content::CURRENT_WORK.label, edit_admin_content_path(Content::CURRENT_WORK), :id =>"content_#{Content::CURRENT_WORK.id}_label"  %></li>
       <li><%= link_to "Video", admin_videos_path %></li>
     </ul>
     <div id="tab-0">

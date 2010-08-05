@@ -23,7 +23,7 @@
         <%= menu_item_link "Publications", list_top_pictures_path %>
         <%= menu_item_link "Multimedia", list_top_pictures_path %>
         <%= menu_item_link "Current Work", list_top_pictures_path %>
-        <%= menu_item_link "Bio", list_top_pictures_path %>
+        <%= menu_item_link "Bio", content_path(Content::BIO), :remote => true %>
         <%= menu_item_link "Contact", list_top_pictures_path %>
       </ul>
 

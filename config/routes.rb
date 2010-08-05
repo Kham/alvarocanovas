@@ -2,6 +2,7 @@ Alvarocanovas::Application.routes.draw do
 
   namespace 'admin' do
     resources :videos
+    resources :contents
     resources :categories do
       collection do
         get :reorder, :list
@@ -23,7 +24,8 @@ Alvarocanovas::Application.routes.draw do
   end
 
   resources :clients
-
+  resources :contents, :only => :show
+  
   match 'pictures/list' => 'pictures#top_list', :as => :list_top_pictures
 
   root :to => 'pictures#top_list'

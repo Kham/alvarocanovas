@@ -5,7 +5,7 @@ class Picture < ActiveRecord::Base
   has_attached_file :image,
                     :styles => {
                       :small => ['50x50>', 'jpg'],
-                      :large => ['798x530>', 'jpg']
+                      :large => ['798x530><', 'jpg']
                     }
   
   default_scope :order => 'number'

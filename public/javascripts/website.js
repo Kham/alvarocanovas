@@ -1,3 +1,28 @@
+
+
+SlideShow = {
+  timeout: null,
+  setup: function(){
+    $(".category_menu.menu").livequery(
+        function(){ SlideShow.clear() },
+        function(){ SlideShow.clear() }
+      );
+  },
+  launchWithDelay: function(url){
+    SlideShow.timeout = setTimeout(function(){SlideShow.callback(url)},10000)
+  },
+  clear: function(){
+    clearTimeout(SlideShow.timeout)
+  },
+  callback: function(url){
+    $.get(url);
+  }
+};
+
+var clearSlideShowTimeout = function(){
+  clearTimeout(slideShowTimeout);
+};
+
 (function($){
 
   var opt = {
@@ -113,6 +138,8 @@ var Gallery = {
 
 };
 
+
+
 (function($){
   $.fn.gallery = function(thema, options){
 
@@ -152,6 +179,7 @@ $(function(){
   $("#thumbs").livequery(function(){
     $(this).gallery('classic');
   });
+  SlideShow.setup();
 
 
 });
