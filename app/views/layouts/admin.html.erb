@@ -12,6 +12,7 @@
     <ul>
       <li><%= link_to "Editorial", '#tab-0' %></li>
       <li><%= link_to "Advertizing", admin_categories_path(:type => 'Client') %></li>
+      <li><%= link_to "Publication", admin_categories_path(:type => 'Publication') %></li>
       <li><%= link_to Content::BIO.label, edit_admin_content_path(Content::BIO), :id =>"content_#{Content::BIO.id}_label" %></li>
       <li><%= link_to Content::CURRENT_WORK.label, edit_admin_content_path(Content::CURRENT_WORK), :id =>"content_#{Content::CURRENT_WORK.id}_label"  %></li>
       <li><%= link_to "Video", admin_videos_path %></li>

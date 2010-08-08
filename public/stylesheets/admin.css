@@ -41,6 +41,10 @@
   float:right;
   margin:0 10px;
   font-size:70%;
+  position:absolute;
+  right:20px;
+  top:50%;
+  margin-top:-25px;
 }
 .category .actions a{
   display:inline;
@@ -51,7 +55,9 @@
   text-decoration:underline;
 }
 
-
+li.picture{
+  position:relative;
+}
 
 
 

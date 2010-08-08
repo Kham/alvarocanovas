@@ -14,12 +14,16 @@
       <h2><span>Menu</span></h2>
 
       <ul id="main_menu_list">
-        <%= menu_item_link "Accueil", list_top_pictures_path, :remote => true do %>
-          <% Category.all.each do |category| %>
+        <%= menu_item_link "Editorial", list_top_pictures_path, :remote => true do %>
+          <% Category.where(:type=> nil).each do |category| %>
             <li><%= link_to category.title, category_path(category), :remote => true %></li>
           <% end %>
         <% end %>
-        <%= menu_item_link "Corporate/Advertising", list_top_pictures_path %>
+        <%= menu_item_link "Corporate/Advertising", :remote => true do %>
+          <% Client.all.each do |client| %>
+            <li><%= link_to client.title, category_path(client), :remote => true %></li>
+          <% end %>
+        <% end %>
         <%= menu_item_link "Publications", list_top_pictures_path %>
         <%= menu_item_link "Multimedia", list_top_pictures_path %>
         <%= menu_item_link "Current Work", content_path(Content::CURRENT_WORK), :remote => true %>

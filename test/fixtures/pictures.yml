@@ -2,7 +2,7 @@ arkan:
   category: bosnia
   number: 1
   top: true
-  image_file_name: 0.jpeg
+  image_file_name: 0.jpg
   
 rose:
   category: bosnia
@@ -172,3 +172,26 @@ img27:
   top: true
   image_file_name: 27.jpg
 
+img28:
+  category: match
+  number: 1
+  top: false
+  image_file_name: couv_match1.jpg
+
+img29:
+  category: match
+  number: 2
+  top: false
+  image_file_name: couv_match2.jpg
+
+img30:
+  category: match_publication
+  number: 2
+  top: false
+  image_file_name: 27.jpg
+
+img31:
+  category: zadig
+  number: 1
+  top: true
+  image_file_name: zadig_voltaire.jpg

@@ -8,6 +8,9 @@ israel:
   title: Israel
   number: 2
   image_file_name: crowd.jpg
+  description: "Israel is a country in the Middle East located on the east coast of the Mediterranean: the Levantine Basin.Since its inception in 1948, it is defined as the state of the Jewish people, the heir of biblical Israeland the kingdom of Judea. It is the only country wher the language is Hebrew.Its political system is parliamentary democracy type.
+The Prime Minister is the role head of government. The Knesset, Israeli parliament,
+is elected by universal suffrage for 4 years. Israel's economy is ranked 42nd in terms of importance. Israel is the country where the indicator Human development is the highest in the Middle East.Jerusalem is the capital of the State of Israel, not recogniz internationally. Tel Aviv and its metropolis,Gush Dan (3.2 million inhabitants), are."
   
 georgia:
   title: Georgia
@@ -24,5 +27,10 @@ match:
   title: Paris Match
   type: Client
   number: 2
-  image_file_name: logo_match.jpg
+  image_file_name: logo_match.png
 
+match_publication:
+  title: Paris Match
+  type: Publication
+  number: 1
+  image_file_name: logo_match.png

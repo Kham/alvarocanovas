@@ -1,11 +1,17 @@
 bio:
   name: bio
-  label: biographie
-  html: Ma bio
+  label: Bio
+  html: "Currently, two of the most popular web design trends are: taking the minimal approach, which we will look at next week, and the use of clever and creative typography. Today we focus on typography.
+Not only do we showcase typography in the classic sense, but also illustrate that the combination of web design and great typography can be used effectively, along with clever color selection, and create usable web sites thats base design is dominated by text, for either navigation, a good headline, a logo or even used for the entire content.
+As the selection below illustrates there are no limitation to using typography within web design.
+Below you will find 50 varied styles and examples of creative and effective typography within web design.
+
+Not only do we showcase typography in the classic sense, but also illustrate that the combination of web design and great typography can be used effectively, along with clever color selection, and create usable web sites thats base design is dominated by text, for either navigation, a good headline, a logo or even used for the entire content.
+Reporter à Paris Match depuis plusieurs années, il rapporte dans ses bagages des souvenirs indélébiles. Les senteurs et les malheurs de l'Afrique par exemple. Il suffit de parcourir le marché de Trechville d'Abidjan pour qu'ö tout jamais ce pays reste dans votre coeur."
   image_file_name: alvaro.jpg
 
 content:
   name: current_work
-  label: Projet en cours
+  label: Current work
   html: boire une bière
 
