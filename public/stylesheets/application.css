@@ -104,7 +104,12 @@ ul#main_menu_list{
   font-size:inherit;
   font-weight:inherit;
 }
-
+#side_content .menu ul{
+  padding:10px 0;
+}
+#side_content .menu ul li {
+  padding:3px 0;
+}
 /*Galleries*/
 
 #gallery{

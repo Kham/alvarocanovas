@@ -1,9 +1,7 @@
 $('#content').fadeOut('slow',
   function(){
-    $('#side_content')
-      .html('<%= render_j :partial => 'categories/menu'%>');
-    $('#main_content')
-      .html('<%= render_j :partial => 'pictures/index', :locals => { :pictures => @pictures } %>');
-    $(this).fadeIn();
+    $(this)
+      .html('<%= render_j :partial => 'categories/index'%>')
+      .fadeIn();
   }
 );

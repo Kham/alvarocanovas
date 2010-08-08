@@ -1,12 +1,17 @@
-<div id="gallery">
-  <div id="loading"></div>
-  <div id="slideshow"></div>
-  <div id="thumbs">
-    <a class="pageLink prev" style="visibility: hidden;" href="#" title="Previous Page"></a>
-    <ul class="thumbs">
-      <%= render :partial => @pictures %>
-    </ul>
-    <a class="pageLink next" style="visibility: hidden;" href="#" title="Next Page"></a>
-  </div>
-</div>
+<%= content_for :side_content do %>
+  <%= render :partial => 'categories/menu' %>
+<% end %>  
 
+<%= render :layout => 'layouts/content' do %>
+  <div id="gallery">
+    <div id="loading"></div>
+    <div id="slideshow"></div>
+    <div id="thumbs">
+      <a class="pageLink prev" style="visibility: hidden;" href="#" title="Previous Page"></a>
+      <ul class="thumbs">
+        <%= render :partial => @pictures %>
+      </ul>
+      <a class="pageLink next" style="visibility: hidden;" href="#" title="Next Page"></a>
+    </div>
+  </div>
+<% end %>  
