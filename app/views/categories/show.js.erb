@@ -5,7 +5,7 @@ $("#content")
         .html('<%=  render_j :partial => 'show' %>')
         .fadeIn()
         .delay(10000);
-        $.get('<%= category_pictures_url(@category)%>');
+      $.get('<%= category_pictures_url(@category)%>');
     }
   );
 
