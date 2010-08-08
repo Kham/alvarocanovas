@@ -4,8 +4,10 @@ $("#content")
       $(this)
         .html('<%=  render_j :partial => 'show' %>')
         .fadeIn()
-        .delay(10000);
-      $.get('<%= category_pictures_url(@category)%>');
+        .delay(10000)
+        .queue('fx', function(){
+          $(this).find('a.category_pictures').trigger('click')
+        });
     }
   );
 
