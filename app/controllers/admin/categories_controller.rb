@@ -1,13 +1,10 @@
 class Admin::CategoriesController < Admin::ApplicationController
   layout false
+
   
   def index
-    @categories = Category.includes(:pictures)
-    render :action => :list, :layout =>'admin'
-  end
-
-  def list
-    @categories = Category.paginate :page => params[:page]
+    @categories = Category.where(:type => params[:type]).includes(:pictures)
+    render :action => :index, :layout => request.xhr? ? false : 'admin'
   end
 
   def edit
@@ -31,17 +28,18 @@ class Admin::CategoriesController < Admin::ApplicationController
       flash.now[:notice] = "Reportage supprimé avec succés"
     else
       flash.now[:notice] = "Impossible de supprimer le reportage"
-      render :action => 'update.js.erb'
     end
+    render :text => nil
   end
 
   def new
-    @category = Category.new
+    @category = Category.where(:type => params[:type]).new
   end
 
   def create
     @category = Category.new(params[:category])
     if @category.save
+      @categories = Category.where(:type => params[:type]).includes(:pictures)
       flash.now[:notice] = "Reportage créé avec succés"
       respond_to_parent { render :action => 'create.js.erb' }
     else
@@ -52,6 +50,7 @@ class Admin::CategoriesController < Admin::ApplicationController
 
   def show
     @category = Category.find(params[:id])
+    render :action => :update
   end
   
   def reorder

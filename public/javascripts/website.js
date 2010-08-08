@@ -71,9 +71,12 @@ var clearSlideShowTimeout = function(){
     scrollUp: function(){
       $menu = this;
       $menu.find('h2')
-       .animate({top: opt.topBefore}, function(){
-         $menu.find('>ul').fadeOut();
-      })
+       .animate({top: opt.topBefore},
+        function(){
+          $menu.find('>ul').fadeOut('fast');        
+        }
+      );
+      $menu.find('>ul').fadeOut();
       $menu.find('h2 span').fadeIn('slow');
     }
   }

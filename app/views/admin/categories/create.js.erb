@@ -1,7 +1,5 @@
-$('<%= render_j :partial => 'category', :object => @category %>')
-  .hide()
-  .appendTo('#categories')
-  .fadeIn();
-
-$('#new_category')
-  .replaceWith('<%= render_j :partial => 'link_new' %>')
+$('#<%= params[:type] %>_categories_wrapper')
+  .fadeOut(function(){
+    $(this).html('<%= render_j :partial => 'index' %>')
+  })
+  .fadeIn()

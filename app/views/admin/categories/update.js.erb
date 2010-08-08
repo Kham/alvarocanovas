@@ -1,4 +1,18 @@
-$('#category_<%=@category.id%>')
-  .replaceWith('<%= render_j :partial => 'category', :object => @category %>');
+$('#category_<%=@category.id%> .info')
+  .replaceWith('<%= render_j :partial => @category %>');
 
-$('<%= "#categories" %>').sortable('refresh');  
+$('#category_<%=@category.id%> .content')
+  .html('<%= render_j :partial => 'admin/pictures/index', :locals => { :category => @category, :pictures => @category.pictures } %>');
+
+<% unless @category.pictures.blank? %>
+
+  (function($){
+    var interval = setInterval(function(){
+      if($(".categories").data('accordion').running == 0){
+        clearInterval(interval);
+        $(".categories").accordion('activate','#category_<%=@category.id%> .header');
+      }
+    },200)
+  })(jQuery);
+
+<% end %>

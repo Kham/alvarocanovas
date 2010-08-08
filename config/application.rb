@@ -43,7 +43,6 @@ module Alvarocanovas
       'jquery',
       'rails',
       'jquery.livequery',
-      'ajax_multipart_form',
       'jquery-ui-1.8.2.custom.min',
       'jquery.galleriffic',
       'jquery.history',

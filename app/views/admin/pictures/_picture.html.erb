@@ -1,12 +1,8 @@
 <%= content_tag_for :li, picture, :class=> "ui-state-default" do %>
-
+  <span class="ui-icon-arrowthick-2-n-s"> &nbsp;</span>
   <span class="actions">
     <%= link_to "Editer", [:edit, :admin, category, picture], :remote => true %>
   </span>
-  
-
   <%= image_tag picture.image.url(:small), :class=> 'head_image' %>
   <%= picture.title if picture.title? %>
-
-
 <% end %>

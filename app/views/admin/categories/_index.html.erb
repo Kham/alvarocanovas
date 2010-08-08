@@ -1,3 +1,8 @@
-<ul id='categories' class="categories sortable">
-  <%= render :partial => 'admin/categories/category', :collection => @categories %>
-</ul>
+<div id="<%= params[:type] %>_categories_wrapper">
+  <%= render :partial => 'admin/categories/link_new' %>
+  <div id='<%= params[:type] %>_categories' class="sortable accordion categories">
+    <% @categories.each do |category| %>
+      <%= render :partial => 'admin/categories/category', :object => category, :layout => 'item' %>
+    <% end %>
+  </div>
+</div>

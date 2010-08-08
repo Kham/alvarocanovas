@@ -1,5 +1,8 @@
-<%= labelled_form_for [:admin, category], :html => { :multipart => true }, :remote => true do |form| %>
+<%= labelled_form_for [:admin, @category], :html => { :multipart => true }, :remote => true do |form| %>
   <h4><%= form.object.new_record? ? "Nouveau reportage" : "Modifier le reportage" %></h4>
+
+  <%= form.hidden_field :type %>
+
   <%= form.text_field :title %>
 
   <%= form.file_field :image %>
@@ -7,10 +10,11 @@
   <%= form.text_area :description %>
 
   <% if form.object.new_record? %>
-    <%= link_to "Annuler", cancel_new_admin_category_path, :remote => true %>
+    <%= link_to "Annuler", cancel_new_admin_category_path, :class => 'cancel_new_category', :remote => true %>
   <% else %>
-    <%= link_to "Annuler", admin_category_path, :remote => true %>
+    <%= link_to "Annuler", admin_category_path, :class => 'cancel_edit_category', :remote => true %>
   <% end %>
+
   <%= form.submit %>
   
 <% end %>

@@ -10,7 +10,7 @@ namespace :db do
 
     desc "Load paperclip files"
     task :load_paperclip_images => :environment do
-      [Category, Picture, Content].each do |klass|
+      [Category, Client, Picture, Content].each do |klass|
         klass.where("image_file_name IS NOT NULL").each do |instance|
           instance.image = File.new(File.join(Rails.root, "test/fixtures/files/", instance.image_file_name))
           instance.image.reprocess!

@@ -1,38 +1,59 @@
-ul#categories li,
-ul#categories li div.header{
+.category,
+.category div.header,
+.sortable.pictures{
   -moz-border-radius:4px 4px 4px 4px;
   list-style:none;
   line-height:50px;
 }
 
-ul#categories img.head_image{
+
+.loader{
+  height:100%;
+  background:white;
+  position:absolute;
+}
+.loader div{
+  height:100%;
+  background:url(../images/loader.gif) center center no-repeat;
+}
+
+
+
+.category img.head_image{
   position:relative;
   top:10px;
   margin:0 10px;
   margin-left:35px;
 }
-ul#categories.ui-sortable li img.head_image,
-ul#pictures.ui-sortable li img.head_image{
-  margin-left:20px;
-}
-ul#categories span.ui-icon-arrowthick-2-n-s{
+
+.pictures.sortable .ui-icon-arrowthick-2-n-s{
+  width:15px;
+  height:100%;
   float:left;
   left:10px;
   position:relative;
   top:17px;
+  background-image:url("../stylesheets/ui-lightness/images/ui-icons_ef8c08_256x240.png");
+  background-position:-128px -48px;
+  height:15px;
 }
-ul#categories li span.actions{
+.category span.actions{
   float:right;
   margin:0 10px;
   font-size:70%;
 }
-ul#categories li span.actions a{
+.category .actions a{
+  display:inline;
   padding:0;
   padding-left:5px;
 }
-ul#categories li span.actions a:hover{
+.category .actions a:hover{
   text-decoration:underline;
 }
+
+
+
+
 
 form{
   margin:0 20px;

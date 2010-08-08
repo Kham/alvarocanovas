@@ -1,2 +1,2 @@
-$('<%="#category_#{@category.id}"%>')
-  .html('<%= render_j :partial => 'form', :locals => { :category => @category } %>')
+$('<%="#category_#{@category.id}_pictures"%>')
+  .replaceWith('<%= render_j :partial => 'form' %>')

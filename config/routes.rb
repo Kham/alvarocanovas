@@ -3,6 +3,7 @@ Alvarocanovas::Application.routes.draw do
   namespace 'admin' do
     resources :videos
     resources :contents
+    resources :clients
     resources :categories do
       collection do
         get :reorder, :list

@@ -1,29 +1,6 @@
-<%= content_tag_for :li, category, :class=> "ui-state-default"  do %>
 
-  <div class="header">
+<span class="info">
+  <%= image_tag category.image.url(:small), :class=>'head_image' if category.image? %>
+  <%= category.title %>
+</span>
 
-    <%= content_tag :span, :class => 'actions' do %>
-      <% if request.parameters[:action] != "list" %>
-        <%= link_to "Editer", edit_admin_category_path(category), :method => :get, :remote => true %>
-        <%= link_to "Supprimer", admin_category_path(category), :method => :delete, :remote => true %>
-      <% else %>
-        <%= link_to "Ajouter une photographie", new_admin_category_picture_path(category), :remote => true %>
-      <% end %>
-    <% end %>
-
-    <%= image_tag category.image.url(:small), :class=>'head_image' if category.image? %>
-
-    <%= category.title %>
-
-
-
-  </div>
-
-
-  <div class="content">
-    <% if request.parameters[:action] == "list" %>
-      <%= render :partial => 'admin/pictures/index', :locals => { :category => category, :pictures => category.pictures } %>
-    <% end %>
-  </div>
-
-<% end %>

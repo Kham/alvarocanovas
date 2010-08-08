@@ -1,2 +1,6 @@
-$('#new_category').
-  replaceWith('<%= render_j :partial => 'form', :locals => { :category => @category } %>')
+$('#<%= params[:type] %>_categories_wrapper')
+  .fadeOut(function(){
+    $(this).html('<%= render_j :partial => 'form' %>')
+  })
+  .fadeIn();
+

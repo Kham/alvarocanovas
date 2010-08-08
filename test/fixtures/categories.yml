@@ -4,8 +4,8 @@ bosnia:
   image_file_name: children.jpg
   description: Mon voyage en bosnie (2002)
 
-kosovo:
-  title: Kosovo
+israel:
+  title: Israel
   number: 2
   image_file_name: crowd.jpg
   
@@ -13,3 +13,16 @@ georgia:
   title: Georgia
   number: 3
   image_file_name: man_on_the_beach.jpg
+
+zadig:
+  title: Zadig
+  type: Client
+  number: 1
+  image_file_name: zadig.jpg
+
+match:
+  title: Paris Match
+  type: Client
+  number: 2
+  image_file_name: logo_match.jpg
+
