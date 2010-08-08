@@ -60,8 +60,9 @@ h1 span{
   top:0;
   left:0;
   width:620px;
-  height:75px;
+  min-height:75px;
   font-size:10px;
+  z-index:1000;
 }
 #menu h2{
   border-top:1px solid;
@@ -81,10 +82,14 @@ ul#main_menu_list{
   padding:0 10px;
   position:relative;
   top:1px;
+  
 }
 #menu .sub_items{
-  padding-top:10px;
-  position:absolute;
+  padding:10px 0 5px 0 ;
+}
+#menu .sub_items li{
+  padding:5px 0;
+  text-transform:none;
 }
 
 /*Menu coté*/
