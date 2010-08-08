@@ -4,4 +4,5 @@
   <div id="category_description">
     <%= raw @category.description %>
   </div>
+  <%= link_to "direct to slideshow", category_pictures_path(@category), :remote => true, :class => "category_pictures" %>
 <% end %>

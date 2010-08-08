@@ -1,6 +1,6 @@
 <div id="category_<%=@category.id%>_menu" class="category_menu menu ">
   <h3><%= @category.title%></h3>
-
+  <% if @pictures %>
   <ul>
     <li id="slideShowCaption"></li>
     <li id="slideShowControls"></li>
@@ -9,5 +9,5 @@
     <% end %>
     <li><%= link_to "Full Screen", "#", :id => "fullScreen" %></li>
   </ul>
-
+  <% end %>
 </div>
