@@ -1,14 +1,13 @@
-$("#content").fadeOut('slow',
-  function(){
-    $('#side_content')
-      .html('<%= render_j :partial => 'menu'%>');
-    $('#main_content')
-      .html('<%= render_j :partial => 'category' %>');
-    $(this).fadeIn(function(){
-      SlideShow.launchWithDelay('<%= category_pictures_url(@category)%>');
-    });
+$("#content")
+  .fadeOut('slow',
+    function(){
+      $(this)
+        .html('<%=  render_j :partial => 'show' %>')
+        .fadeIn()
+        .delay(10000);
+        $.get('<%= category_pictures_url(@category)%>');
+        }
+      );
 
-  }
-);
 
 

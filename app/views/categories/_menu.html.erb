@@ -5,7 +5,7 @@
     <li id="slideShowCaption"></li>
     <li id="slideShowControls"></li>
     <% if params[:controller] == "categories" %>
-      <li><%= link_to "Overview", category_pictures_path(@category), :remote => true %></li>
+      <li><%= link_to "Overview", category_path(@category), :remote => true %></li>
     <% end %>
     <li><%= link_to "Full Screen", "#", :id => "fullScreen" %></li>
   </ul>
