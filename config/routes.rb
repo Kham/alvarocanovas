@@ -24,7 +24,9 @@ Alvarocanovas::Application.routes.draw do
   resources :categories do
     resources :pictures
   end
-
+  resources :clients do
+    resources :pictures
+  end
   resources :clients
   resources :contents, :only => :show
   

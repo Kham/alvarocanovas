@@ -21,7 +21,7 @@
         <% end %>
         <%= menu_item_link "Corporate/Advertising", :remote => true do %>
           <% Client.all.each do |client| %>
-            <li><%= link_to client.title, category_path(client), :remote => true %></li>
+            <li><%= link_to client.title, category_pictures_path(client), :remote => true %></li>
           <% end %>
         <% end %>
         <%= menu_item_link "Publications", list_top_pictures_path %>

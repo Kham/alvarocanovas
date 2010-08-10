@@ -1,6 +1,6 @@
-<div id="category_<%=@category.id%>_menu" class="category menu ">
+<div id="category_<%=@category.id%>_menu" class="<%= @category.class.name.downcase%> menu ">
     <h3><%= @category.title%></h3>
-    <% if @pictures %>
+    <% if @category.type.nil? and @pictures %>
     <ul>
       <li id="slideShowCaption"></li>
       <li id="slideShowControls"></li>
@@ -9,6 +9,8 @@
       <% end %>
       <li><%= link_to "Full Screen", "#", :id => "fullScreen" %></li>
     </ul>
-    <% end %>
     <div class="line">&nbsp;</div>
+    <% elsif not @category.type.nil? %>
+      <%= image_tag @category.image.url(:large) %>
+    <% end %>
 </div>

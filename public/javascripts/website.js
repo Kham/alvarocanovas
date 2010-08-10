@@ -54,7 +54,7 @@ $(function(){
 
   // Initilisation des galleries
   $("#thumbs").livequery(function(){
-    $(this).gallery('classic');
+    $(this).gallery('classic',{ autoStart: ($(this).find('img').size() > 1) ? true : false });
   });
 
 });

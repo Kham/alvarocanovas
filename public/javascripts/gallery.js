@@ -76,12 +76,12 @@ var Gallery = {
 
     /**************** Event handlers for custom next / prev page links **********************/
 
-    gallery.find('#thumbs a.prev').click(function(e) {
+    $('#thumbs a.prev').live('click',function(e) {
       gallery.previousPage();
       e.preventDefault();
     });
 
-    gallery.find('#thumbs a.next').click(function(e) {
+    $('#thumbs a.next').live('click',function(e) {
       gallery.nextPage();
       e.preventDefault();
     });
