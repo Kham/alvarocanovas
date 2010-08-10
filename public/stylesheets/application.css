@@ -97,11 +97,13 @@ ul#main_menu_list{
 #side_content .menu{
   margin-top:200px;
   margin-right:50px;
-  border-bottom:1px solid;
   text-align:right;
   margin-left:10px;
+  padding-bottom:20px;
 }
-
+#side_content .menu .wrapper{
+  border-bottom:1px solid;
+}
 #side_content .menu h3{
   margin:0;
   margin-bottom:3px;
@@ -120,14 +122,33 @@ ul#main_menu_list{
 #gallery{
   position:relative;
   margin-left:200px;
+  width:800px;
+}
+
+#gallery a{
+  font-size:0;
 }
 #slideshow{
 }
-
+#gallery .slideLink{
+  position:absolute;
+  width:200px;
+  height:533px;
+  display:block;
+  opacity:0;
+  z-index:1000;
+}
+#gallery .slideLink.next{
+  right:0;
+  background:url(../images/largeRightArrow.gif) 110px center no-repeat;
+}
+#gallery .slideLink.prev{
+  left:0;
+  background:url(../images/largeLeftArrow.gif) 30px center no-repeat;
+}
 .image-wrapper{
   position:absolute;
   text-align:center;
-  width:805px;
   display:block;
 }
 #slideshow .image-wrapper a{
@@ -137,35 +158,49 @@ ul#main_menu_list{
   vertical-align:middle;
 }
 
+#thumbs-wrapper.top_list{
+  display:none;               
+}
+
+
 #thumbs{
   top:543px;
+  border-top:1px solid #999999;
   position:absolute;
   width:100%;
   text-align:center;
 }
-#thumbs .pageLink{
-  padding-left:16px;
-  line-height:19px;
+#thumbs a{
+  line-height:60px;
 }
+#thumbs .pageLink{
+  line-height:60px;
+  height:60px;
+  width:10px;
+}
+
 #thumbs .pageLink.next{
-  background:url(galleriffic.css/nextPageArrow.gif) center center
+  background:url(../images/rightArrow.jpg) left center  no-repeat;
+  float:right;
 }
 #thumbs .pageLink.prev{
-  background:url(galleriffic.css/prevPageArrow.gif) center center
+  background:url(../images/leftArrow.jpg) center center no-repeat;
+  float:left;
+  margin-right:6px;
 }
 
 #thumbs ul{
-  display:inline;
-  text-align:center;
+  margin:0 auto;
+  text-align:left;
+  width:774px;
+  height:60px;
+  overflow:hidden;
 }
 
 #thumbs li{
   display:inline;
-  margin: 0 10px;
-  width:50px;
-}
-#thumbs a{
-  line-height:60px;
+  width:80px;
+  margin-right:6px;
 }
 
 

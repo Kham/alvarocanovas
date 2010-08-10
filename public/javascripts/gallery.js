@@ -1,11 +1,11 @@
 var Gallery = {
 
-  onMouseOutOpacity: 0.67,
+  onMouseOutOpacity: 0.4,
 
   classic: {
     delay:                     5000,
-    numThumbs:                 10,
-    preloadAhead:              10,
+    numThumbs:                 9,
+    preloadAhead:              15,
     enableTopPager:            false,
     enableBottomPager:         false,
     imageContainerSel:         '#slideshow',
@@ -36,9 +36,11 @@ var Gallery = {
         .html( (nextIndex+1) +' / '+ this.data.length);
     },
     onPageTransitionOut: function(callback) {
+      //this.animate({left:}
       this.fadeTo('fast', 0.0, callback);
+
     },
-    onPageTransitionIn: function() {
+    onPageTransitionIn: function(positionHandler) {
       var prevPageLink = this.find('a.prev').css('visibility', 'hidden');
       var nextPageLink = this.find('a.next').css('visibility', 'hidden');
 
@@ -87,6 +89,25 @@ var Gallery = {
       alert('launch other slideshow');
       e.preventDefault();
     })
+
+    $('#gallery .slideLink').hover(
+      function(){
+        $(this).fadeTo('fast',0.4)
+      },
+      function(){
+        $(this).fadeTo('fast',0)
+      }
+    );
+
+    $('#gallery .slideLink.next').click(function(e){
+      gallery.next();
+      e.preventDefault();
+    })
+    $('#gallery .slideLink.prev').click(function(e){
+      gallery.previous();
+      e.preventDefault();
+    })
+
 
   }
 })(jQuery);

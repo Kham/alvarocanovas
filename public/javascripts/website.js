@@ -1,9 +1,8 @@
 $(function(){
 
   // Initialisation menu principal
-//  $('#menu').mainMenu();
-  $('#menu ul').hide();
 
+  $('#menu ul').hide();
   $('#menu').hover(
     function(){
       $(this)
@@ -44,10 +43,10 @@ $(function(){
       $(this).find('ul').css('display','none');
       $(this).hover(
         function(){
-          $(this).children('ul').slideDown();
+          $(this).find('ul').slideDown();
         },
         function(){
-          $(this).children('ul').slideUp();
+          $(this).find('ul').slideUp();
         }
       );
     }
