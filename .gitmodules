@@ -7,6 +7,3 @@
 [submodule "vendor/plugins/constant_in_db"]
 	path = vendor/plugins/constant_in_db
 	url = git://github.com/itkin/constants_in_db.git
-[submodule "vendor/plugins/paperclip"]
-	path = vendor/plugins/paperclip
-	url = http://github.com/thoughtbot/paperclip.git
