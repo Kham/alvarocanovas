@@ -1,5 +1,4 @@
 <div id="category_<%=@category.id%>_menu" class="category menu ">
-  <div class="wrapper">
     <h3><%= @category.title%></h3>
     <% if @pictures %>
     <ul>
@@ -11,5 +10,5 @@
       <li><%= link_to "Full Screen", "#", :id => "fullScreen" %></li>
     </ul>
     <% end %>
-  </div>
+    <div class="line">&nbsp;</div>
 </div>

@@ -76,12 +76,12 @@ var Gallery = {
 
     /**************** Event handlers for custom next / prev page links **********************/
 
-    gallery.find('a.prev').click(function(e) {
+    gallery.find('#thumbs a.prev').click(function(e) {
       gallery.previousPage();
       e.preventDefault();
     });
 
-    gallery.find('a.next').click(function(e) {
+    gallery.find('#thumbs a.next').click(function(e) {
       gallery.nextPage();
       e.preventDefault();
     });
@@ -108,6 +108,21 @@ var Gallery = {
       e.preventDefault();
     })
 
+    $('#gallery #thumbs-wrapper').hover(
+      function(){
+        $("#thumbs-hidder")
+          .animate({height:"1px"})
+          .find('span')
+          .fadeOut('fast');
+
+      },
+      function(){
+        $("#thumbs-hidder")
+          .animate({height:"100%"})
+          .find('span')
+          .fadeIn('slow');
+      }
+    );
 
   }
 })(jQuery);
