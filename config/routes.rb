@@ -21,6 +21,9 @@ Alvarocanovas::Application.routes.draw do
   end
   match "admin", :to => 'admin/categories#index'
   
+
+  resources :videos
+
   resources :categories do
     resources :pictures
   end

@@ -1,13 +1,16 @@
 module Paperclip
 
-  class Video < Processor
+  class Convert < Processor
 
     def initialize(file,options)
-      debugger      
+      
+      puts 'io'
+
     end
 
     def make
-      debugger
+            puts 'io'
+
     end
   end
 end

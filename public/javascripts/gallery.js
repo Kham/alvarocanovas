@@ -30,7 +30,7 @@ var Gallery = {
       this.find('ul.thumbs').children()
         .eq(prevIndex).fadeTo('fast', Gallery.onMouseOutOpacity).end()
         .eq(nextIndex).fadeTo('fast', 1.0);
-
+      
       // Update the photo index display
       this.$captionContainer
         .html( (nextIndex+1) +' / '+ this.data.length);

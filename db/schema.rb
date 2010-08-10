@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100805150441) do
+ActiveRecord::Schema.define(:version => 20100810151637) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -48,6 +48,31 @@ ActiveRecord::Schema.define(:version => 20100805150441) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.boolean  "top",                :default => false
+  end
+
+  create_table "videos", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "flash_file_file_name"
+    t.string   "flash_file_content_type"
+    t.integer  "flash_file_file_size"
+    t.datetime "flash_file_updated_at"
+    t.string   "mp4_file_file_name"
+    t.string   "mp4_file_content_type"
+    t.integer  "mp4_file_file_size"
+    t.datetime "mp4_file_updated_at"
+    t.string   "ogg_file_file_name"
+    t.string   "ogg_file_content_type"
+    t.integer  "ogg_file_file_size"
+    t.datetime "ogg_file_updated_at"
+    t.string   "image_file_file_name"
+    t.string   "image_file_content_type"
+    t.integer  "image_file_file_size"
+    t.datetime "image_file_updated_at"
+    t.string   "source_file_name"
+    t.string   "source_content_type"
+    t.integer  "source_file_size"
+    t.datetime "source_updated_at"
   end
 
 end
