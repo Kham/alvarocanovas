@@ -46,11 +46,11 @@ end
 
 namespace :assets do
   task :symlinks, :roles => :app do
-    %w{system}.each do |folder|
+    %w{public/system log}.each do |folder|
       run "mkdir -p #{shared_path}/#{folder}"
       run <<-CMD
-        rm -rf #{release_path}/public/#{folder} &&
-        ln -nfs #{shared_path}/#{folder} #{release_path}/public/#{folder}
+        rm -rf #{release_path}/#{folder} &&
+        ln -nfs #{shared_path}/#{folder} #{release_path}/#{folder}
       CMD
     end
   end
