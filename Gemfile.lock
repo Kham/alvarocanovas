@@ -6,6 +6,14 @@ GIT
       daemons
 
 GIT
+  remote: git://github.com/itkin/paperclip.git
+  revision: a2a5044
+  specs:
+    paperclip (2.3.3)
+      activerecord
+      activesupport
+
+GIT
   remote: git://github.com/jstorimer/delayed_paperclip.git
   revision: ddb7c1e
   branch: rails3
@@ -46,7 +54,7 @@ GEM
     arel (0.4.0)
       activesupport (>= 3.0.0.beta)
     builder (2.1.2)
-    capistrano (2.5.18)
+    capistrano (2.5.19)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -56,7 +64,7 @@ GEM
     daemons (1.1.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
-    highline (1.5.2)
+    highline (1.6.1)
     i18n (0.4.1)
     linecache (0.43)
     mail (2.2.5)
@@ -71,9 +79,6 @@ GEM
     net-ssh (2.0.23)
     net-ssh-gateway (1.0.1)
       net-ssh (>= 1.99.1)
-    paperclip (2.3.3)
-      activerecord
-      activesupport
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.9)
@@ -113,7 +118,7 @@ DEPENDENCIES
   capistrano
   delayed_job!
   delayed_paperclip!
-  paperclip
+  paperclip!
   rails (= 3.0.0.rc)
   ruby-debug
   system_timer

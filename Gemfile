@@ -9,14 +9,13 @@ gem 'rails', '3.0.0.rc'
 
 gem 'will_paginate', '3.0.pre2'
 
-gem 'paperclip'
+
 gem 'system_timer'
-#gem 'delayed_job'
+
+gem 'paperclip', :git => "git://github.com/itkin/paperclip.git"
+gem 'delayed_job', :git => 'git://github.com/collectiveidea/delayed_job.git'
 gem 'delayed_paperclip', :git => 'git://github.com/jstorimer/delayed_paperclip.git', :branch => 'rails3'
 
-
-
-gem 'delayed_job', :git => 'git://github.com/collectiveidea/delayed_job.git'
 
 gem 'capistrano'
 
