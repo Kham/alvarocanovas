@@ -1,27 +1,28 @@
 # VideoForEveryBody
 class ActionView::Base
 
-  def video_for_everybody(options={})
-    style = {:width => 640, :height => 360, :flash_controls_height => 24 }.update(options.symbolize_keys!.delete(:style) || {})
-
-    content_tag :video, style do
-      tag(:source, :src => "#{options[:mp4]}", :type => 'video/mp4')+
-      tag(:source, :src => "#{options[:ogg]}", :type => 'video/ogg')+
-      content_tag(:object,
-                  :width =>style[:width],
-                  :height => style[:height]+style[:flash_controls_height],
-                  :type => "application/x-shockwave-flash",
-                  :data => "#{options[:flash]}") do
-        tag(:param, :name => "movie", :value => "#{options[:flash]}")+
-        tag(:param, :name => "flashvars", :value =>"autostart=true&amp;image=#{options[:image]}&amp;file=#{options[:mp4]}")+
-        image_tag("#{options[:image]}",
-                  :width => style[:width],
-                  :height => style[:height],
-                  :alt => "#{options[:alt]}",
-                  :title => "No video playback capabilities, please download the video")
-      end
-    end
-  end
+#  def video_tag_for(video, options={})
+#
+#    style = {:width => 640, :height => 360, :flash_controls_height => 24 }.update(options.symbolize_keys!.delete(:style) || {})
+#
+#    content_tag :video, style do
+#      tag(:source, :src => "#{video_url video, :mp4}", :type => 'video/mp4')+
+#      tag(:source, :src => "#{video_url video, :ogv}", :type => 'video/ogg')+
+#      content_tag(:object,
+#                  :width =>style[:width],
+#                  :height => style[:height]+style[:flash_controls_height],
+#                  :type => "application/x-shockwave-flash",
+#                  :data => "#{video_url video, :flv }") do
+#        tag(:param, :name => "movie", :value => "#{ video_url video, :flv }")+
+#        tag(:param, :name => "flashvars", :value =>"autostart=true&amp;image=#{options[:image]}&amp;file=#{video_url video, :mp4 }")+
+#        image_tag("#{options[:image]}",
+#                  :width => style[:width],
+#                  :height => style[:height],
+#                  :alt => "#{options[:alt]}",
+#                  :title => "No video playback capabilities, please download the video")
+#      end
+#    end
+#  end
 end
 
 #<video width="640" height="360" controls autobuffer>

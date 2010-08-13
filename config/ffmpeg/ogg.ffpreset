@@ -1,0 +1,3 @@
+f=ogg
+acodec=libvorbis
+vcodec=libtheora

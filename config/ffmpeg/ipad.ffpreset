@@ -1,0 +1,30 @@
+# -ar Audio sampling rate in Hz
+# -ab Audio bit rate in kbit/s
+# -f Output format
+# -s Output dimension
+
+f=mp4
+threads=4
+acodec=libfaac
+ar=22050
+ab=32k
+ac=2
+vcodec=libx264
+b=1200k
+flags=+loop+mv4
+cmp=+chroma
+partitions=+parti4x4+partp8x8+partb8x8
+subq=7
+trellis=1
+refs=5
+coder=0
+me_range=16
+keyint_min=25
+bt=256k
+maxrate=10000k
+sc_threshold=40
+i_qfactor=0.71
+qdiff=4
+level=30
+g=250
+#s=800x533
