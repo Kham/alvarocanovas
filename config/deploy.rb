@@ -58,7 +58,7 @@ end
 
 namespace :bundler do
   task :bundle_new_release, :roles => :app do
-    #cré un lien symbolique de current/vendor/bundle vers shared/bundle
+    #cré un lien symbolique de shared/bundle current/vendor/bundle 
     shared_dir = File.join(shared_path, 'bundle')
     run "mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_path}/vendor/bundle"
     run "cd #{release_path} && bundle install vendor/bundle --without development"
