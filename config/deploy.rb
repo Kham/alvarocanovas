@@ -1,12 +1,13 @@
-set :stages, %w{staging production}
 require 'capistrano/ext/multistage'
+
+set :stages, %w{staging production}
 
 set :application, "alvarocanovas"
 set :use_sudo, false
 set :checkout, "export"
 set :user, "rails"
 
-set :main_server, 'ns0455.ovh.net'
+set :main_server, 'ns210455.ovh.net'
 set :password,  Capistrano::CLI.password_prompt("Rails user password on the server : ") #'kz28h42b'
 
 set :scm, :git
@@ -52,8 +53,23 @@ namespace :assets do
   end
 end
 
+namespace :bundler do
+  task :create_symlink, :roles => :app do
+    shared_dir = File.join(shared_path, 'bundle')
+    release_dir = File.join(current_release, '.bundle')
+    run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
+  end
+
+  task :bundle_new_release, :roles => :app do
+    bundler.create_symlink
+    run "cd #{release_path} && bundle install --without test"
+  end
+end
+
+
 after "deploy:update_code", "deploy:remove_htaccess"
 after "deploy:remove_htaccess", "assets:symlinks"
+after "assets:symlinks", 'bundler:bundle_new_release'
 
 after "deploy:stop",    "delayed_job:stop"
 after "deploy:start",   "delayed_job:start"

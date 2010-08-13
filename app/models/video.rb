@@ -12,7 +12,7 @@ class Video < ActiveRecord::Base
 
   
 
-#  process_in_background :source
+  process_in_background :source
   
   validates_attachment_presence :source
 
