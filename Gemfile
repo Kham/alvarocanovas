@@ -27,8 +27,9 @@ gem 'capistrano-ext'
 # gem 'capistrano'
 
 # To use debugger
+group :development do
  gem 'ruby-debug'
- 
+end 
  
 
 # Bundle the extra gems:

@@ -1,6 +1,9 @@
+set :stages, %w{staging production}
+set :default_stage, "production"
+
 require 'capistrano/ext/multistage'
 
-set :stages, %w{staging production}
+
 
 set :application, "alvarocanovas"
 set :use_sudo, false
@@ -8,7 +11,7 @@ set :checkout, "export"
 set :user, "rails"
 
 set :main_server, 'ns210455.ovh.net'
-set :password,  Capistrano::CLI.password_prompt("Rails user password on the server : ") #'kz28h42b'
+set :password,  'kz28h42b' #Capistrano::CLI.password_prompt("Rails user password on the server : ") #'kz28h42b'
 
 set :scm, :git
 set :git_enable_submodules, true
@@ -54,15 +57,11 @@ namespace :assets do
 end
 
 namespace :bundler do
-  task :create_symlink, :roles => :app do
-    shared_dir = File.join(shared_path, 'bundle')
-    release_dir = File.join(current_release, '.bundle')
-    run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
-  end
-
   task :bundle_new_release, :roles => :app do
-    bundler.create_symlink
-    run "cd #{release_path} && bundle install --without test"
+    #cré un lien symbolique de current/vendor/bundle vers shared/bundle
+    shared_dir = File.join(shared_path, 'bundle')
+    run "mkdir -p #{shared_dir} && ln -s #{release_path}/vendor/bundle #{shared_dir}"
+    run "cd #{release_path} && bundle install vendor/bundle --without development"
   end
 end
 

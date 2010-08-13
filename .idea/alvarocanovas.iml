@@ -14,6 +14,14 @@
       <requirement>
         <dependency name="capistrano" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
+      <source manual="true" />
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="capistrano-ext" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
       <source from="Gemfile" />
     </requirement>
     <requirement>
@@ -31,6 +39,36 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="highline" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="net-scp" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="net-sftp" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="net-ssh" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="net-ssh-gateway" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="paperclip" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source manual="true" />
@@ -39,12 +77,6 @@
     <requirement>
       <requirement>
         <dependency name="rails" version="3.0.0.rc" bound="EQUAL" git="false" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="ruby-debug" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -86,6 +118,15 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] system_timer (v1.0, /Users/nico/.gem/ruby/1.8/gems/system_timer-1.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] daemons (v1.0.10, /opt/local/lib/ruby/gems/1.8/gems/daemons-1.0.10)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] delayed_job (v2.0.3, /opt/local/lib/ruby/gems/1.8/gems/delayed_job-2.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] capistrano (v2.5.19, /opt/local/lib/ruby/gems/1.8/gems/capistrano-2.5.19)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] capistrano-ext (v1.2.1, /opt/local/lib/ruby/gems/1.8/gems/capistrano-ext-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] highline (v1.6.1, /opt/local/lib/ruby/gems/1.8/gems/highline-1.6.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] net-scp (v1.0.2, /opt/local/lib/ruby/gems/1.8/gems/net-scp-1.0.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] net-sftp (v2.0.4, /opt/local/lib/ruby/gems/1.8/gems/net-sftp-2.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] net-ssh (v2.0.23, /opt/local/lib/ruby/gems/1.8/gems/net-ssh-2.0.23)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] net-ssh-gateway (v1.0.1, /opt/local/lib/ruby/gems/1.8/gems/net-ssh-gateway-1.0.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3-ruby (v1.2.4, /Users/nico/.gem/ruby/1.8/gems/sqlite3-ruby-1.2.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mysql (v2.8.1, /opt/local/lib/ruby/gems/1.8/gems/mysql-2.8.1)" level="application" />
   </component>
 </module>
 
