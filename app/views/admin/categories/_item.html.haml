@@ -1,0 +1,13 @@
+%div{ :class => "category_#{category.id}", :class=>"category"}
+
+  .header
+
+    %span.actions
+      = link_to "Editer", edit_admin_category_path(category), :class => 'edit_category', :method => :get, :remote => true
+      = link_to "Supprimer", admin_category_path(category), :class => "delete_category", :method => :delete, :remote => true
+      -#= link_to "Ajouter une photographie", new_admin_category_picture_path(category), :remote => true
+
+    = yield
+
+  .content
+    = render :partial => 'admin/pictures/index', :locals => { :category => category, :pictures => category.pictures }

@@ -1,8 +1,0 @@
-<%= form.text_field :title %>
-<% if form.object.image? %>
-  <%= content_tag :div, :class=> "form_line" do %>
-    <label>Image actuelle</label>
-    <%= image_tag form.object.image.url(:small) %>
-  <% end %>
-<% end %>
-<%= form.file_field :image %>

@@ -1,6 +1,0 @@
-<%= div_for @content do %>
-  <div class="content_html">
-    <%= raw @content.html %>
-  </div>
-  <%= image_tag @content.image.url(:large) if @content.image? %>
-<% end %>

@@ -1,0 +1,6 @@
+%li{ :id=>"picture_#{picture.id}", :class=>"picture ui-state-default" }
+  %span.ui-icon-arrowthick-2-n-s
+  %span.actions
+    = link_to "Editer", edit_admin_category_picture_path(category,picture), :remote => true
+  = image_tag picture.image.url(:small), :class=> 'head_image'
+  = picture.title if picture.title? 

@@ -1,6 +1,7 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
+.idea
 .idea/**/*
 public/system/**/*
 vendor/bundle/**/*

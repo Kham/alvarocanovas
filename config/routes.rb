@@ -30,12 +30,13 @@ Alvarocanovas::Application.routes.draw do
   resources :clients do
     resources :pictures
   end
+  
   resources :clients
   resources :contents, :only => :show
   
-  match 'pictures/list' => 'pictures#top_list', :as => :list_top_pictures
+  
 
-  root :to => 'pictures#top_list'
+  root :to => 'categories#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

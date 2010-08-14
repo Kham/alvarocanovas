@@ -1,0 +1,48 @@
+!!! Basic
+%html
+
+  %head
+    %title Alvarocanovas
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag :defaults, 'gallery', 'website'
+    = csrf_meta_tag 
+
+  %body
+
+    #page
+      %h1
+        Alvaro Canovas
+        %span= yield(:title).blank? ? "Photography" : yield(:title) 
+
+      #menu
+        %h2
+          %span Menu
+
+        %ul#main_menu_list
+
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Editorial", categories_path, :remote => true) } do
+            - Category.where(:type=> nil).each do |category|
+              %li
+                = link_to category.title, category_path(category), :remote => true
+
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Corporate/Advertising", :remote => true)} do
+            - Client.all.each do |client|
+              %li
+                = link_to client.title, category_pictures_path(client), :remote => true
+
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Publications", categories_path)} do
+            = ''
+
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Multimedia", videos_path) } do
+            = ''
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Current Work", content_path(Content::CURRENT_WORK), :remote => true)} do
+            = ''
+
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Bio", content_path(Content::BIO), :remote => true)} do
+            = ''
+
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Contact", categories_path)} do
+            = ''
+
+      #content
+        = yield

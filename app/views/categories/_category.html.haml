@@ -1,0 +1,8 @@
+%div[@category]
+
+  = image_tag @category.image.url(:large), :class=> "category_image"
+
+  #category_description= raw @category.description
+
+  = link_to "direct to slideshow", category_pictures_path(@category), :remote => true, :class => "category_pictures"
+

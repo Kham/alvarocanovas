@@ -9,9 +9,5 @@ class PicturesController < ApplicationController
   def index
    @pictures = @category.pictures
   end
-
-  def top_list
-    @pictures = Picture.where(:top => true)
-  end
     
 end

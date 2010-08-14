@@ -1,0 +1,8 @@
+= form.text_field :title
+
+- if form.object.image? 
+  .form_line
+    %label Image actuelle
+    = image_tag form.object.image.url(:small)
+
+= form.file_field :image

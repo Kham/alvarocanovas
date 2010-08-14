@@ -1,0 +1,28 @@
+= content_for :side_content do
+  = render :partial => 'categories/menu' if @category
+
+
+= render :layout => 'layouts/content' do
+
+  #gallery
+
+    #loading '
+
+    %a{ :class => 'slideLink next',  :href=>"#", :title=>"Next Page" }
+    %a{ :class => "slideLink prev",  :href=>"#", :title=>"Previous Page"}
+
+    #slideshow
+
+    #thumbs-wrapper{ :class => params[:action] }
+
+      #thumbs
+
+        %a{ :class => 'pageLink next',  :href=>"#", :title=>"Next Page" }
+        %a{ :class => "pageLink prev",  :href=>"#", :title=>"Previous Page"}
+
+        %ul.thumbs
+          = render :partial => @pictures
+
+      #thumbs-hidder
+        %span Thumbs
+

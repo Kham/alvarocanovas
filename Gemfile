@@ -20,6 +20,9 @@ gem 'delayed_paperclip', :git => 'git://github.com/jstorimer/delayed_paperclip.g
 gem 'capistrano'
 gem 'capistrano-ext'
 
+gem 'compass'
+gem 'haml'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

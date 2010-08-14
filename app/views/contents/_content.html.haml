@@ -1,0 +1,5 @@
+= div_for @content do
+
+  .content_html= raw @content.html
+
+  = image_tag @content.image.url(:large) if @content.image?

@@ -1,0 +1,16 @@
+= labelled_form_for [:admin, @content], :remote => true do |form|
+
+  = form.text_field :label
+
+  .form_line
+    %label Image actuelle
+    = image_tag form.object.image.url(:small) 
+
+  = form.file_field :image
+  
+  = form.text_area :html, :id => "html_#{(Time.now.to_f*100).to_i}", :label => "Texte"
+
+  = link_to "Annuler", edit_admin_content_path(@content), :remote => true
+
+  = form.submit
+
