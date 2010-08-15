@@ -1,4 +1,4 @@
-/* line 4, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 4, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -10,12 +10,12 @@ html, body {
   vertical-align: baseline;
 }
 
-/* line 6, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 6, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html {
   font-size: 100.01%;
 }
 
-/* line 16, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 16, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
 pre, a, abbr, acronym, address, code, del, dfn, em, img,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
@@ -29,7 +29,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, th
   vertical-align: baseline;
 }
 
-/* line 18, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 18, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 blockquote, q {
   margin: 0;
   padding: 0;
@@ -41,12 +41,12 @@ blockquote, q {
   vertical-align: baseline;
   quotes: "" "";
 }
-/* line 45, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 45, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 20, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 20, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 th, td, caption {
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@ th, td, caption {
   vertical-align: middle;
 }
 
-/* line 22, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 22, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 table {
   margin: 0;
   padding: 0;
@@ -76,7 +76,7 @@ table {
   vertical-align: middle;
 }
 
-/* line 24, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 24, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -106,7 +106,7 @@ a, a:visited {
 ul {
   list-style: none;
 }
-/* line 11, ../../../../../../../../opt/local/lib/ruby/gems/1.8/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
+/* line 11, ../../../vendor/bundle/ruby/1.8/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.scss */
 ul li {
   list-style-image: none;
   list-style-type: none;

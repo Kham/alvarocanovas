@@ -7,3 +7,4 @@ end
 
 # Initialize the rails application
 Alvarocanovas::Application.initialize!
+
