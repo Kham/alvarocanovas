@@ -1,4 +1,6 @@
 $("#content")
-    .fadeOut('slow')
-    .html('<%= render_j :partial => @videos.first %>')
-    .fadeIn('slow')
+    .fadeOut('slow', function(){
+      $(this)
+        .html('<%= render_j :partial => @videos.first %>')
+        .fadeIn('slow')
+    })
