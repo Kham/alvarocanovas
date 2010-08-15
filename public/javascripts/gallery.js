@@ -102,27 +102,41 @@ var Gallery = {
     $('#gallery .slideLink.next').click(function(e){
       gallery.next();
       e.preventDefault();
-    })
+    });
+
     $('#gallery .slideLink.prev').click(function(e){
       gallery.previous();
       e.preventDefault();
-    })
+    });
 
-    $('#gallery #thumbs-wrapper').delayedHover(
-      function(elt){
-        $("#thumbs-hidder")
-          .animate({height:"1px"})
-          .find('span')
-          .fadeOut('fast');
+    $('#gallery #thumbs-wrapper').hover(
+      function(){
+        $(this).clearQueue();
+        $(this).queue(function(){
+          $(this)
+            .find("#thumbs-hidder")
+            .animate({height:"1px"})
+            .find('span')
+            .fadeOut('fast');
+          $(this).dequeue();
+        })
       },
-      function(elt){
-        $("#thumbs-hidder")
-          .animate({height:"100%"})
-          .find('span')
-          .fadeIn('slow');
-      },
-      2000
+      function(){
+        $(this).delay(2000);
+        $(this).queue(function(){
+          $(this)
+            .find("#thumbs-hidder")
+            .animate({height:"100%"})
+            .find('span')
+            .fadeIn('slow');
+          $(this).dequeue();
+        })
+      }
     );
+
+    if($("#thumbs img").size() <=1 ){
+      $('#thumbs-wrapper, .slideLink').hide()
+    }
 
   }
 })(jQuery);

@@ -1,16 +1,17 @@
-%div{ :id=>"category_#{@category.id}_menu", :class=> "#{@category.class.name.downcase} menu "}
+%div{ :id => "category_#{@category.id}_menu", :class=> "#{@category.class.name.downcase} menu "}
 
-  %h3= @category.title
+
 
   - if @category.type.nil? and @pictures
+
+    %h3= @category.title
 
     %ul
       %li#slideShowCaption
       %li#slideShowControls
+      %li= link_to "Overview", category_path(@category), :remote => true        
       - if params[:controller] == "categories"
-        %li= link_to "Overview", category_path(@category), :remote => true
         %li= link_to "Full Screen", "#", :id => "fullScreen"
-  
     .line
 
   - elsif not @category.type.nil?
