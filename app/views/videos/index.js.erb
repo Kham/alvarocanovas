@@ -1,0 +1,4 @@
+$("#content")
+    .fadeOut('slow')
+    .html('<%= render_j :partial => @videos.first %>')
+    .fadeIn('slow')

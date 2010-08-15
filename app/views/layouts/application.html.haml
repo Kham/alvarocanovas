@@ -36,10 +36,10 @@
               %li
                 = link_to client.title, category_pictures_path(client), :remote => true
 
-          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Publications", categories_path)} do
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Publications", categories_path, :remote => true)} do
             = ''
 
-          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Multimedia", videos_path) } do
+          = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Multimedia", videos_path, :remote => true) } do
             = ''
           = render :layout => 'layouts/menu_link', :locals => { :link =>  link_to("Current Work", content_path(Content::CURRENT_WORK), :remote => true)} do
             = ''
