@@ -108,7 +108,7 @@ var Gallery = {
       e.preventDefault();
     })
 
-    $('#gallery #thumbs-wrapper').hover(
+    $('#gallery #thumbs-wrapper').delayedHover(
       function(){
         $("#thumbs-hidder")
           .animate({height:"1px"})
@@ -121,7 +121,8 @@ var Gallery = {
           .animate({height:"100%"})
           .find('span')
           .fadeIn('slow');
-      }
+      },
+      2000
     );
 
   }
