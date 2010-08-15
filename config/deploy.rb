@@ -57,8 +57,12 @@ namespace :assets do
 end
 
 namespace :bundler do
+  #en attendant de bundler les gems directement dans le systeme (nécessite sudo actuellement)
   task :bundle_new_release, :roles => :app do
-    run "cd #{release_path} && bundle install --without development"
+    #cré un lien symbolique de shared/bundle current/vendor/bundle
+    shared_dir = File.join(shared_path, 'bundle')
+    run "mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_path}/vendor/bundle"
+    run "cd #{release_path} && bundle install vendor/bundle --without development"
   end
 end
 
