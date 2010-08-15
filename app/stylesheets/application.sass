@@ -7,6 +7,7 @@
 @include font-face("ACaslonPro", font-files("KozGoPr6N-Light.otf",opentype),'this.eot')
 
 $general_color: #999999
+$client-red: #990000
 
 body
 
@@ -45,14 +46,14 @@ img
 
 /*Titre principal*/
 h1
-  font-size: 180%
+  font-size: 150%
   text-transform: uppercase
   float: right
   margin: 35px 0 0 0
   font-weight: normal
   letter-spacing: 2px
   span
-    color: #990000
+    color: $client-red
 
 
 /*Menu principal*/
@@ -63,9 +64,9 @@ h1
   top: 0
   left: 10px
   min-height: 75px
-  font-size: 10px
   z-index: 1000
   line-height: 20px
+  font-size: 11px
 
   h2
     border-top: 1px solid
@@ -86,8 +87,18 @@ h1
       padding: 0 10px
 
       .sub_items
-        padding: 10px 0 5px 0
+        padding-bottom: 5px 
         text-transform: none
+
+        li
+          padding: 2px 0
+
+          a
+            display: block
+
+            &:hover
+              color: $client-red
+              margin-left: 2px
 
 
 /*Menu coté*/

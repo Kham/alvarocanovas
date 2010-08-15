@@ -109,14 +109,13 @@ var Gallery = {
     })
 
     $('#gallery #thumbs-wrapper').delayedHover(
-      function(){
+      function(elt){
         $("#thumbs-hidder")
           .animate({height:"1px"})
           .find('span')
           .fadeOut('fast');
-
       },
-      function(){
+      function(elt){
         $("#thumbs-hidder")
           .animate({height:"100%"})
           .find('span')
