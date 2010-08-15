@@ -65,10 +65,17 @@ namespace :bundler do
   end
 end
 
+namespace :compass do
+  task :compile, :roles => :app do
+    run "compass compile -e production --force"
+  end
+end
+
 
 after "deploy:update_code", "deploy:remove_htaccess"
 after "deploy:remove_htaccess", "assets:symlinks"
 after "assets:symlinks", 'bundler:bundle_new_release'
+after 'bundler:bundle_new_release', 'compass:compile'
 
 after "deploy:stop",    "delayed_job:stop"
 after "deploy:start",   "delayed_job:start"
